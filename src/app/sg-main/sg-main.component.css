@@ -1,0 +1,16 @@
+.mobileshow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileshow {display: block; font-size: 12pt}
+  }
+
+.btn {
+    outline: none !important;
+    box-shadow: none !important; 
+  }
+.btn-link{
+  text-decoration: none;
+}

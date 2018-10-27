@@ -1,0 +1,37 @@
+<div class="collapse bg-white fade" id="navbarHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-7 pt-3 pb-1">
+        <h4 class="jumbotron-heading text-dark">About {{title}}</h4>
+        <p class="text-dark py-2" style="text-align: justify;">{{title}} is an AngularJS Web-App run by Sudipto Ghosh. He is a high school graduate from India and has experience in Website Development and Designing. He is interested in taking up projects, and benefit the clients with a strong online presence with SEO and Optimized and Responsive Website development.
+        </p>
+      </div>
+      <div class="col-sm-4 offset-md-1 py-3">
+        <h4 class="jumbotron-heading text-dark">Contact Me</h4>
+        <div class="btn-group btn-group-lg py-2 mobilehide">
+            <a role="button" class="btn btn-outline-dark" [href]="linkedin_link"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+            <a role="button" class="btn btn-outline-dark" [href]="email"><fa-icon [icon]="['fas', 'envelope-square']"></fa-icon></a>
+            <a role="button" class="btn btn-outline-dark" [href]="phone"><fa-icon [icon]="['fas', 'phone-square']" rotate="90"></fa-icon></a>
+        </div>
+        <div class="btn-group btn-group-lg py-2 mobileshow">
+          <a role="button" class="btn btn-outline-dark" [href]="linkedin_link"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+          <a role="button" class="btn btn-outline-dark" [href]="email"><fa-icon [icon]="['fas', 'envelope-square']"></fa-icon></a>
+          <a role="button" class="btn btn-outline-dark" [href]="phone"><fa-icon [icon]="['fas', 'phone-square']" rotate="90"></fa-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-light bg-white shadow-sm" id="header">
+  <div class="container container-fluid d-flex justify-content-between">
+    <div class="navbar-header">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+    <strong class="text-dark "><fa-icon [icon]="['fab', 'angular']" size="lg"></fa-icon>  {{title}}</strong>
+    </a>
+    </div>
+    <button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target="#navbarHeader" [ngx-scroll-to]="'#navbarHeader'" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>

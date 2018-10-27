@@ -1,0 +1,22 @@
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  a.btnlink{text-decoration: none;color: inherit}
+  a.btnlink:hover{color: white}
+  .mobileshow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileshow {display: flex; font-size: 12pt}
+  }
+
+  .mobilehide{display: -webkit-flex flex;} 
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobilehide {display: none; font-size: 12pt}
+  }

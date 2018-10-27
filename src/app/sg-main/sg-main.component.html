@@ -1,0 +1,37 @@
+<section class="jumbotron text-center bg-white">
+  <div class="container sticky-top">
+  <p><img [src]="angular_logo" width="290px" height="290px" class="img-fluid" alt="SudiptoJS" [@fadeInOut]/></p>
+  <h1 class="jumbotron-heading" [@fadeInOut]>{{title}} WebApp</h1>
+  <p class="lead text-muted" style="text-align: justify;" [@fadeInOut]>{{title}} is a modular webapp consisting of various components and services. This is actually a dummy page listing links to my other projects.</p>
+  </div>
+</section>
+<div class="album py-0 bg-white" [@fadeInOut]>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" id="project1">
+        <div class="card mb-4 shadow-sm">
+          <a href="{{ff_link}}" target="_blank"><img class="card-img-top" src="assets/img/ff.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title jumbotron-heading" style="text-align: center;">FlightFeeder</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="project2">
+        <div class="card mb-4 shadow-sm">
+          <a href="{{gps_link}}" target="_blank"><img class="card-img-top" src="assets/img/gps.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title jumbotron-heading" style="text-align: center;">Ghosh Pro</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="project3">
+        <div class="card mb-4 shadow-sm">
+          <a [href]="sanitize(ssh_link)" target="_blank"><img class="card-img-top" src="assets/img/pi.png"  alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title jumbotron-heading" style="text-align: center;">Raspberry Pi</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
