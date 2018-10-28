@@ -1,6 +1,7 @@
 # SudiptoJS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
+
 Required Dependencies: `FontAwesomeModule, flag-icon-css, Twitter Bootstrap, jQuery, holder.js (...)`
 
 ## Development server
